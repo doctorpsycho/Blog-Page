@@ -1,0 +1,33 @@
+<%- include("partials/header") -%>
+
+<h1>
+    Compose
+</h1>
+ 
+<!-- <form action="/compose" method="post" >
+
+<input type="text" placeholder="Post's title here" name="postTitle">
+<input type="text" placeholder="Post's content here" name="postContent">
+<button type="submit" name="button">
+    Publish
+</button>
+
+</form> -->
+
+<form action="/compose" method="post" >
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="text" class="form-control" name="postTitle">
+    </div>
+    <div class="mb-3">
+        <label for="postContent" class="form-label">Posts' Content here:</label>
+      <input type="text" class="form-control" name="postContent">
+    </div>
+    <button type="submit" class="btn btn-primary">Publish</button>
+  </form>
+
+<p>
+    <%= post %>
+</p>
+
+<%- include("partials/footer") -%>
